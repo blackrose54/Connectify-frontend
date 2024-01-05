@@ -1,0 +1,8 @@
+
+.bgGradient{
+    @apply h-screen flex justify-center items-center;
+    background: radial-gradient(circle at 10% 80%, rgb(68, 120, 193) 0%,transparent 50%), radial-gradient(circle at 80% 10%, rgb(225, 13, 70) 5%, rgb(30, 53, 204) 70%);
+    /* background:radial-gradient(circle at 25% 60%, #3BBFFE 0, transparent 25%), radial-gradient(circle at 70% top, #D21372 0, #7120FD 60%); */
+    
+        
+}

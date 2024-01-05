@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    margin: 0;
+    padding: 0;
+    scrollbar-gutter: stable;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    @apply rounded-full bg-slate-400;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+
+.containerCustom{
+    overflow-y: scroll;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+}
+
+.containerCustom::-webkit-scrollbar{
+    width: 0;
+    height: 0;
+}
+
+.image-container-online {
+  position: relative;
+  display: inline-block;
+}
+
+/* Style for the image */
+.image-container-online img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Style for the green dot */
+.image-container-online::after {
+  content: "";
+  position: absolute;
+  bottom: 0; /* Adjust this value based on your design */
+  right: 0; /* Adjust this value based on your design */
+  width: 40%; /* Adjust the size of the dot */
+  height: 40%; /* Adjust the size of the dot */
+  background-color: rgb(15, 233, 15); /* Color of the dot */
+  border-radius: 50%; /* To make it a circle */
+}
+
+.image-container-offline {
+  position: relative;
+  display: inline-block;
+}
+
+/* Style for the image */
+.image-container-offline img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
