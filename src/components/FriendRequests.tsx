@@ -49,6 +49,8 @@ const FriendRequests: FC<FriendRequestsProps> = ({}): ReactElement => {
         toast.error("Something went wrong!")
     }
   }
+  if (!FriendRequests) return <></>
+  
   return (
     <Accordion.Root type="single" collapsible className="">
       <Accordion.Item value="firend" className="">

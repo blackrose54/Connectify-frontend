@@ -220,7 +220,7 @@ const SocketProvider: FC<SocketProviderProps> = ({
   }, []);
 
   useEffect(() => {
-    const _socket = io("localhost:5000", {
+    const _socket = io("https://connectify-backend-4xiz.onrender.com", {
       auth: {
         token: session.user.id,
       },
